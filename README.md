@@ -2,29 +2,28 @@
 A website that allowed people to compete with friends by building a team of spellers in the National spelling bee and gaining points when a member of the team would spelling something correctly
 
 
-##Home without login
+## Home without login
 ![homewithoutlogin](exampleImages/homewithoutlogin.PNG)
 
-##Login modal
+## Login modal
 ![homewithlogin](exampleImages/loginmodal.PNG)
 
-##Home with login
+## Home with login
 ![homewithlogin](exampleImages/homewithlogin.PNG)
 
-##Restistration page
+## Restistration page
 ![homewithlogin](exampleImages/registration.PNG)
 
-##Join or create a league
+## Join or create a league
 ![homewithlogin](exampleImages/leagueregistration.PNG)
 
-##Multiple leagues
+## Multiple leagues
 ![homewithlogin](exampleImages/multiple leagues.PNG)
 
-##Inactive league
+## Inactive league
 ![homewithlogin](exampleImages/inActiveleague.PNG)
 
-##Active League
+## Active League
 ![homewithlogin](exampleImages/activeLeague.PNG)
 
-##Active League 2
 ![homewithlogin](exampleImages/activetrades2.PNG)
