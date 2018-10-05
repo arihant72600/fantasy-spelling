@@ -18,7 +18,7 @@ A website that allowed people to compete with friends by building a team of spel
 ![homewithlogin](exampleImages/leagueregistration.PNG)
 
 ## Multiple leagues
-![homewithlogin](exampleImages/multiple leagues.PNG)
+![homewithlogin](exampleImages/multipleleagues.PNG)
 
 ## Inactive league
 ![homewithlogin](exampleImages/inActiveleague.PNG)
