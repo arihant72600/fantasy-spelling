@@ -199,10 +199,6 @@ include "navbar.php";
 		</thead>
 		<tr>
 		<?php 
-			
-			
-			
-			
 
 			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
@@ -230,10 +226,6 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u2)) {
-			
-			
-			
-			
 
 			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
@@ -259,10 +251,6 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u3)) {
-			
-			
-			
-			
 
 			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
@@ -288,10 +276,6 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u4)) {
-			
-			
-			
-			
 
 			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
