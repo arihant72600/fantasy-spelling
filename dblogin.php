@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	header("Location: index.php");
 	exit();
 }
-$configs = include('config.php');
+$configs = include 'config.php';
 
 $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 

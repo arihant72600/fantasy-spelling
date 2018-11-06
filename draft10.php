@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET"){
 		header("Location: index.php?8");
 		exit();
 	}
-  $configs = include('config.php');
+  $configs = include 'config.php';
 
   $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 

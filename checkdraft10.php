@@ -74,7 +74,7 @@ for ($i=count($u9team);$i<10;$i++) {
 for ($i=count($u10team);$i<10;$i++) {
 	array_push($u10team, "NULL");
 }
-$configs = include('config.php');
+$configs = include 'config.php';
 
 $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 

@@ -12,7 +12,7 @@ if (isset($_GET['lid']) && !empty($_GET["lid"])) {
 	header("Location: index.php?8");
 	exit();
 }
-$configs = include('config.php');
+$configs = include 'config.php';
 
 $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 if ($conn->connect_error) {
@@ -289,7 +289,7 @@ h1{font-size:2.6rem;line-height:normal;margin-top:0;font-weight:300;}h2{font-siz
 
 
 
-$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 if ($conn->connect_error) {
     die("Connection failed: ");
 } 
@@ -333,7 +333,7 @@ foreach ($allstuff as $cuser) {
 
 
 
-$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 if ($conn->connect_error) {
     die("Connection failed: ");
 }
@@ -396,7 +396,7 @@ $conn->close();
 
 
 
-$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 if ($conn->connect_error) {
     die("Connection failed: ");
 }

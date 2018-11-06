@@ -26,7 +26,7 @@ if (isset($_POST["leaguejoin"])) {
 		exit();
 	}
 	if ($join) {
-		$configs = include('config.php');
+		$configs = include 'config.php';
 
 $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
@@ -103,7 +103,7 @@ $conn = new mysqli($configs['servername'], $configs['username'], $configs['passw
 		
 		
 
-		$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+		$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 		if ($conn->connect_error) {
  		   die("Connection failed: ");
@@ -146,7 +146,7 @@ $conn = new mysqli($configs['servername'], $configs['username'], $configs['passw
 	
 	
 
-	$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+	$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 	if ($conn->connect_error) {
 		die("Connection failed: ");
@@ -200,7 +200,7 @@ include "navbar.php";
 		<tr>
 		<?php 
 
-			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+			$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 			
@@ -227,7 +227,7 @@ include "navbar.php";
 		<?php 
 		if (!empty($u2)) {
 
-			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+			$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -252,7 +252,7 @@ include "navbar.php";
 		<?php 
 		if (!empty($u3)) {
 
-			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+			$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -277,7 +277,7 @@ include "navbar.php";
 		<?php 
 		if (!empty($u4)) {
 
-			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+			$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -301,7 +301,7 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u5)) {
-			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+			$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");

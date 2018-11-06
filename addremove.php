@@ -16,7 +16,7 @@ if (empty($allstuff[$mystuff][2][3]) || $allstuff[$mystuff][2][3]===null) {
 				$spellerstake[(int)($speller)]=1;
 			}
 		}
-		$configs = include('config.php');
+		$configs = include 'config.php';
 
 		$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
@@ -165,7 +165,7 @@ $i=$i+1;
 
 
 
-$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 if ($conn->connect_error) {
 	die("Connection failed: ");

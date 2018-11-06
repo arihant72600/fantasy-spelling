@@ -13,7 +13,7 @@ if (isset($_GET['lid']) && !empty($_GET["lid"])) {
 	header("Location: index.php?8");
 	exit();
 }
-$configs = include('config.php');
+$configs = include 'config.php';
 
 $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
@@ -51,7 +51,7 @@ if (isset($_POST["add"])) {
 	
 	
 
-	$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+	$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 	if ($conn->connect_error) {
 		die("Connection failed: ");
@@ -93,7 +93,7 @@ if (isset($_POST["add"])) {
 	
 	
 
-	$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+	$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 	if ($conn->connect_error) {
 		die("Connection failed: ");
@@ -195,7 +195,7 @@ if (isset($_POST["add"])) {
 		
 		
 
-		$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+		$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 		if ($conn->connect_error) {
 			die("Connection failed: ");
@@ -315,7 +315,7 @@ $myid=$_SESSION["id"];
 
 
 
-$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
+$configs = include 'config.php';  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 if ($conn->connect_error) {
 	die("Connection failed: ");

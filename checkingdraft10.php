@@ -45,7 +45,7 @@ for ($i=count($u4team);$i<10;$i++) {
 for ($i=count($u5team);$i<10;$i++) {
 	array_push($u5team, "NULL");
 }
-$configs = include('config.php');
+$configs = include 'config.php';
 
 $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 

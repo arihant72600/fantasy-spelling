@@ -65,7 +65,7 @@ if ($passwordagain!==$pword) {
 	header("Location: index.php?3");
   	exit();
 }
-$configs = include('config.php');
+$configs = include 'config.php';;
 
 $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
