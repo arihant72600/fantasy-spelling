@@ -317,11 +317,6 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u5)) {
-			
-			
-			
-			
-
 			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
