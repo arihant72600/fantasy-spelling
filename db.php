@@ -5,7 +5,7 @@ if (isset($_SESSION["id"])) {
 	exit();
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (isset($_POST['FirstName']) &&!empty($_POST["FirstName"])) {
+   if (isset($_POST['FirstName']) &&!empty($_POST["FirstName"])) {
   	$FirstName=$_POST['FirstName'];
   	if (!preg_match("/^[a-zA-Z ]*$/",$FirstName)) {
   		header("Location: index.php?1");
@@ -82,7 +82,7 @@ if ($stmt->fetch()) {
 	exit();
 }
 $stmt->close();
-$salt = strtr(base64_encode(mcrypt_create_iv(16, MCRYPT_DEV_URANDOM)), '+', '.');
+$salt = strtr(base64_encode(random_bytes(16)), '+', '.');
 $salt = sprintf("$2a$%02d$", 10) . $salt;
 $hash = crypt($pword, $salt);
 $stmt = $conn->prepare("INSERT INTO users VALUES(?,?,?,?,NULL)");
