@@ -17,12 +17,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	header("Location: index.php");
 	exit();
 }
-$servername="localhost";
-$username= "id1634423_arihant";
-$password="ajain123";
-$database="id1634423_users";
+$configs = include('config.php');
 
-$conn = new mysqli($servername, $username, $password,$database);
+$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 if ($conn->connect_error) {
     die("Connection failed: ");

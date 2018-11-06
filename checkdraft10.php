@@ -74,12 +74,9 @@ for ($i=count($u9team);$i<10;$i++) {
 for ($i=count($u10team);$i<10;$i++) {
 	array_push($u10team, "NULL");
 }
-$servername="localhost";
-$username= "id1634423_arihant";
-$password="ajain123";
-$database="id1634423_users";
+$configs = include('config.php');
 
-$conn = new mysqli($servername, $username, $password,$database);
+$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 if ($conn->connect_error) {
  	  die("Connection failed: ");

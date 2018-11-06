@@ -16,12 +16,9 @@ if (empty($allstuff[$mystuff][2][3]) || $allstuff[$mystuff][2][3]===null) {
 				$spellerstake[(int)($speller)]=1;
 			}
 		}
-		$servername="localhost";
-		$username= "id1634423_arihant";
-		$password="ajain123";
-		$database="id1634423_users";
+		$configs = include('config.php');
 
-		$conn = new mysqli($servername, $username, $password,$database);
+		$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 		if ($conn->connect_error) {
 			die("Connection failed: ");

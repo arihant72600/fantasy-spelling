@@ -65,12 +65,9 @@ if ($passwordagain!==$pword) {
 	header("Location: index.php?3");
   	exit();
 }
-$servername="localhost";
-$username= "id1634423_arihant";
-$password="ajain123";
-$database="id1634423_users";
+$configs = include('config.php');
 
-$conn = new mysqli($servername, $username, $password,$database);
+$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 // Check connection
 if ($conn->connect_error) {
