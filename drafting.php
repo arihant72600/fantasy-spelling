@@ -98,18 +98,12 @@ $conn = new mysqli($configs['servername'], $configs['username'], $configs['passw
 		$conn->close();
 
 	} elseif ($create) {
-<<<<<<< HEAD
-		$configs = include('config.php');
-
-$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
-=======
 		
 		
 		
 		
 
 		$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
->>>>>>> fa005b70707b2d629e6b0998dc6ea41cd0d1fb4e
 
 		if ($conn->connect_error) {
  		   die("Connection failed: ");
@@ -147,18 +141,12 @@ $conn = new mysqli($configs['servername'], $configs['username'], $configs['passw
 		header("Location: index.php?3");
 		exit();
 	}
-<<<<<<< HEAD
-	$configs = include('config.php');
-
-$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
-=======
 	
 	
 	
 	
 
 	$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
->>>>>>> fa005b70707b2d629e6b0998dc6ea41cd0d1fb4e
 
 	if ($conn->connect_error) {
 		die("Connection failed: ");
@@ -211,16 +199,12 @@ include "navbar.php";
 		</thead>
 		<tr>
 		<?php 
-<<<<<<< HEAD
-			$configs = include('config.php');
-=======
 			
 			
 			
 			
 
 			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
->>>>>>> fa005b70707b2d629e6b0998dc6ea41cd0d1fb4e
 
 			$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 			
@@ -246,18 +230,12 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u2)) {
-<<<<<<< HEAD
-			$configs = include('config.php');
-
-$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
-=======
 			
 			
 			
 			
 
 			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
->>>>>>> fa005b70707b2d629e6b0998dc6ea41cd0d1fb4e
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -281,18 +259,12 @@ $conn = new mysqli($configs['servername'], $configs['username'], $configs['passw
 		<tr>
 		<?php 
 		if (!empty($u3)) {
-<<<<<<< HEAD
-			$configs = include('config.php');
-
-$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
-=======
 			
 			
 			
 			
 
 			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
->>>>>>> fa005b70707b2d629e6b0998dc6ea41cd0d1fb4e
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -345,18 +317,12 @@ $conn = new mysqli($configs['servername'], $configs['username'], $configs['passw
 		<tr>
 		<?php 
 		if (!empty($u5)) {
-<<<<<<< HEAD
-			$configs = include('config.php');
-
-$conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
-=======
 			
 			
 			
 			
 
 			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
->>>>>>> fa005b70707b2d629e6b0998dc6ea41cd0d1fb4e
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
