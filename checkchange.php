@@ -46,12 +46,12 @@ if (isset($_GET['t']) && !empty($_GET['t'])) {
 	exit();
 }
 if (isset($_POST["add"])) {
-	$servername="localhost";
-	$username= "id1634423_arihant";
-	$password="ajain123";
-	$database="id1634423_users";
+	
+	
+	
+	
 
-	$conn = new mysqli($servername, $username, $password,$database);
+	$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 	if ($conn->connect_error) {
 		die("Connection failed: ");
@@ -88,12 +88,12 @@ if (isset($_POST["add"])) {
 		exit();
 	}
 } else if (isset($_POST["remove"])) {
-	$servername="localhost";
-	$username= "id1634423_arihant";
-	$password="ajain123";
-	$database="id1634423_users";
+	
+	
+	
+	
 
-	$conn = new mysqli($servername, $username, $password,$database);
+	$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 	if ($conn->connect_error) {
 		die("Connection failed: ");
@@ -190,12 +190,12 @@ if (isset($_POST["add"])) {
 	
 } else if (isset($_POST["subsitute"])) {
 	if (isset($_POST["bench"]) && isset($_POST["speller"])) {
-		$servername="localhost";
-		$username= "id1634423_arihant";
-		$password="ajain123";
-		$database="id1634423_users";
+		
+		
+		
+		
 
-		$conn = new mysqli($servername, $username, $password,$database);
+		$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 		if ($conn->connect_error) {
 			die("Connection failed: ");
@@ -310,12 +310,12 @@ if (isset($_POST["oid$tradewith"])) {
 	$oid=$_POST["oid$tradewith"];
 }
 $myid=$_SESSION["id"];
-$servername="localhost";
-$username= "id1634423_arihant";
-$password="ajain123";
-$database="id1634423_users";
 
-$conn = new mysqli($servername, $username, $password,$database);
+
+
+
+
+$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 if ($conn->connect_error) {
 	die("Connection failed: ");

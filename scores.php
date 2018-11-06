@@ -284,12 +284,12 @@ h1{font-size:2.6rem;line-height:normal;margin-top:0;font-weight:300;}h2{font-siz
 </tr>
 </thead>
 <?php
-$servername="localhost";
-$username= "id1634423_arihant";
-$password="ajain123";
-$database="id1634423_users";
 
-$conn = new mysqli($servername, $username, $password,$database);
+
+
+
+
+$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 if ($conn->connect_error) {
     die("Connection failed: ");
 } 
@@ -328,12 +328,12 @@ foreach ($allstuff as $cuser) {
 ?>
 </ul>
 <?php
-$servername="localhost";
-$username= "id1634423_arihant";
-$password="ajain123";
-$database="id1634423_users";
 
-$conn = new mysqli($servername, $username, $password,$database);
+
+
+
+
+$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 if ($conn->connect_error) {
     die("Connection failed: ");
 }
@@ -391,12 +391,12 @@ $conn->close();
 </div>
 </div>
 <?php
-$servername="localhost";
-$username= "id1634423_arihant";
-$password="ajain123";
-$database="id1634423_users";
 
-$conn = new mysqli($servername, $username, $password,$database);
+
+
+
+
+$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 if ($conn->connect_error) {
     die("Connection failed: ");
 }
