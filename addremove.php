@@ -160,12 +160,12 @@ $i=$i+1;
 </div>
 </form>
 <?php
-$servername="localhost";
-$username= "id1634423_arihant";
-$password="ajain123";
-$database="id1634423_users";
 
-$conn = new mysqli($servername, $username, $password,$database);
+
+
+
+
+$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 if ($conn->connect_error) {
 	die("Connection failed: ");

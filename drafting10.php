@@ -143,12 +143,12 @@ $conn = new mysqli($configs['servername'], $configs['username'], $configs['passw
 		$conn->close();
 
 	} elseif ($create) {
-		$servername="localhost";
-		$username= "id1634423_arihant";
-		$password="ajain123";
-		$database="id1634423_users";
+		
+		
+		
+		
 
-		$conn = new mysqli($servername, $username, $password,$database);
+		$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 		if ($conn->connect_error) {
  		   die("Connection failed: ");
@@ -187,12 +187,12 @@ $conn = new mysqli($configs['servername'], $configs['username'], $configs['passw
 		header("Location: index.php?3");
 		exit();
 	}
-	$servername="localhost";
-	$username= "id1634423_arihant";
-	$password="ajain123";
-	$database="id1634423_users";
+	
+	
+	
+	
 
-	$conn = new mysqli($servername, $username, $password,$database);
+	$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 	if ($conn->connect_error) {
 		die("Connection failed: ");
@@ -245,12 +245,12 @@ include "navbar.php";
 		</thead>
 		<tr>
 		<?php 
-			$servername="localhost";
-			$username= "id1634423_arihant";
-			$password="ajain123";
-			$database="id1634423_users";
+			
+			
+			
+			
 
-			$conn = new mysqli($servername, $username, $password,$database);
+			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -274,12 +274,12 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u2)) {
-			$servername="localhost";
-			$username= "id1634423_arihant";
-			$password="ajain123";
-			$database="id1634423_users";
+			
+			
+			
+			
 
-			$conn = new mysqli($servername, $username, $password,$database);
+			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -303,12 +303,12 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u3)) {
-			$servername="localhost";
-			$username= "id1634423_arihant";
-			$password="ajain123";
-			$database="id1634423_users";
+			
+			
+			
+			
 
-			$conn = new mysqli($servername, $username, $password,$database);
+			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -332,12 +332,12 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u4)) {
-			$servername="localhost";
-			$username= "id1634423_arihant";
-			$password="ajain123";
-			$database="id1634423_users";
+			
+			
+			
+			
 
-			$conn = new mysqli($servername, $username, $password,$database);
+			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -361,12 +361,12 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u5)) {
-			$servername="localhost";
-			$username= "id1634423_arihant";
-			$password="ajain123";
-			$database="id1634423_users";
+			
+			
+			
+			
 
-			$conn = new mysqli($servername, $username, $password,$database);
+			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -390,12 +390,12 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u6)) {
-			$servername="localhost";
-			$username= "id1634423_arihant";
-			$password="ajain123";
-			$database="id1634423_users";
+			
+			
+			
+			
 
-			$conn = new mysqli($servername, $username, $password,$database);
+			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -419,12 +419,12 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u7)) {
-			$servername="localhost";
-			$username= "id1634423_arihant";
-			$password="ajain123";
-			$database="id1634423_users";
+			
+			
+			
+			
 
-			$conn = new mysqli($servername, $username, $password,$database);
+			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -448,12 +448,12 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u8)) {
-			$servername="localhost";
-			$username= "id1634423_arihant";
-			$password="ajain123";
-			$database="id1634423_users";
+			
+			
+			
+			
 
-			$conn = new mysqli($servername, $username, $password,$database);
+			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -477,12 +477,12 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u9)) {
-			$servername="localhost";
-			$username= "id1634423_arihant";
-			$password="ajain123";
-			$database="id1634423_users";
+			
+			
+			
+			
 
-			$conn = new mysqli($servername, $username, $password,$database);
+			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
@@ -506,12 +506,12 @@ include "navbar.php";
 		<tr>
 		<?php 
 		if (!empty($u10)) {
-			$servername="localhost";
-			$username= "id1634423_arihant";
-			$password="ajain123";
-			$database="id1634423_users";
+			
+			
+			
+			
 
-			$conn = new mysqli($servername, $username, $password,$database);
+			$configs = include('config.php');  $conn = new mysqli($configs['servername'], $configs['username'], $configs['password'],$configs['database']);
 
 			if ($conn->connect_error) {
 				die("Connection failed: ");
