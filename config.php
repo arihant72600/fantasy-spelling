@@ -2,7 +2,7 @@
 
 return array(
     'servername' => 'localhost',
-    'username' => 'id1634423_arihant',
+    'username' => 'arihant',
     'password' => 'ajain123',
-    'database' => "id1634423_users"
+    'database' => "fantasy-spelling"
 ); //Exameple. Not real usernames or passwords
