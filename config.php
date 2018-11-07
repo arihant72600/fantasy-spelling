@@ -5,4 +5,4 @@ return array(
     'username' => 'arihant',
     'password' => 'ajain123',
     'database' => "fantasy-spelling"
-); //Exameple. Not real usernames or passwords
+); //Example. Not real usernames or passwords
